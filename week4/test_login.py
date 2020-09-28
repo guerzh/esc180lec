@@ -24,10 +24,11 @@ if __name__ == '__main__':
     login.login("thywissen", "newton")
     login.login("cluett", "integral")
     login.login("cluett", "integral")
-    if login.login("cluett", "matrix") == "Refused":
+    if login.login("cluett", "matrix") == "OK":
         print("Test 3 passed")
     else:
         print("Test 3 failed")
+
 
 
     # Test 4: three unsuccessful logins, not in a row
@@ -36,7 +37,16 @@ if __name__ == '__main__':
     login.login("thywissen", "newton")
     login.login("guerzhoy", "integral")
     login.login("cluett", "integral")
-    if login.login("cluett", "matrix") == "Refused":
+    if login.login("cluett", "matrix") == "OK":
         print("Test 4 passed")
     else:
         print("Test 4 failed")
+
+
+
+
+
+
+
+
+
